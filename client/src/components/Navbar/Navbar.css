@@ -1,0 +1,78 @@
+.mainTopNav{
+    min-height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 3px solid #ef8236;
+    box-shadow: 0px 1px 5px #00000033;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #f8f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    height: 100%;
+    min-width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLogo{
+    padding: 5px 25px;
+}
+
+.navItem{
+    margin: 0 3px;
+    font-size: small;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(69,69,69);
+    transition: .2s;
+}
+
+.navBtn{
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.navItem:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.navbar form{
+    flex-grow: 1;
+    padding: 0 12px;
+    position: relative;
+}
+.navbar form input{
+    min-width: 90%;
+    margin: 0;
+    background: transparent;
+    padding: 8px 10px 8px 32px;
+    font-size: 13px;
+    border: 1px solid #0000003e;
+    border-radius: 3px;
+}
+.navbar form .searchIcon{
+    position: absolute;
+    top: 8px;
+    left: 25px;
+}
+
+.navLinks{
+    padding: 7px 13px;
+    border: 1px solid rgb(8, 91, 199);
+    border-radius: 3px;
+    background-color: #e7f8fe;
+    cursor: pointer;
+}
+
+.navLinks:hover{
+    background-color: #d3e4eb ;
+}

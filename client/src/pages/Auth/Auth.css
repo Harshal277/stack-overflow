@@ -1,0 +1,89 @@
+.spaceBetween{
+    margin: auto;
+}
+.authSection{
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #f1f2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.authContainer1{
+    padding: 20px;
+    margin-right: 30px;
+}
+.loginLogo{
+    padding: 20px 30px;
+}
+.authContainer2{
+    margin-top: 10vh;
+    min-width: 25%;
+    display: flex;
+    max-width: 30vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.authContainer2 .form{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 
+    0 20px 48px rgb(0 0 0 / 5%),
+    0 1px 4px rgb(0 0 0 / 10%);
+}
+.authContainer2 .form label input{
+    padding: 10px;
+    width: calc(100% - 20px);
+    border: 1px solid #0000003c;
+    font-size: 11px;
+    background: transparent;
+    color: #212121;
+}
+.authContainer2 .form label:nth-child(1) h4,
+.authContainer2 .form label:nth-child(2) h4,
+.authContainer2 .form label:nth-child(3) h4,
+.authContainer2 .form label:nth-child(4) h4{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+/* .authContainer2 .form label:nth-child(4){
+    display: flex;
+}
+.authContainer2 .form label:nth-child(4) input{
+    width: 15px;
+    margin: 0 15px; 
+} */
+.authBtn{
+    margin-top: 10px;
+    padding: 10px 5px;
+    background-color: #006eff;
+    border: solid 1px #006eff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 13px;
+    font-weight: 500;
+}
+.authBtn:hover{
+    background-color: #018ce3;
+}
+.handleSwitchBtn{
+    color: #006eff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.msg{
+    color: #666767;
+    font-size: 13px;
+}
+.msg span{
+    color: #007ac6;
+}

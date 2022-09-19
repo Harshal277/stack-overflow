@@ -1,0 +1,40 @@
+.leftSidebar{
+    width: 164px;
+    box-sizing: 1px 1px 0 rgba(0,0,0,.2);
+    transition: box-shadow ease-in-out .1s, transform ease-in-out .1s;
+    transform: translateZ(0);
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.sideNav{
+    height: auto;
+    max-width: 100%;
+    position: sticky;
+    margin: 50px 0;
+    padding: 20px 0;
+}
+.sideNavDiv{
+    padding: 10px 0;
+}
+.sideNavDiv div{
+    padding-left: 10px;
+}
+.sideNavLinks{
+    text-decoration: none;
+    color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    transition: .2s;
+}
+.sideNavLinks:hover{
+    color: #000;
+}
+
+.active{
+    font-weight: bolder;
+    color:rgb(44, 44, 44);
+    background-color: rgb(225,225,225);
+    border-right: solid 3px #ef8236;
+}
