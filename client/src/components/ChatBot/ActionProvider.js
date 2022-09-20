@@ -62,6 +62,15 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     }));  
   }
 
+  const handleSearch = (term) => {
+    const botMessage = createChatBotMessage(term);
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));  
+  }
+
   return (
     <div>
       {React.Children.map(children, (child) => {
@@ -72,7 +81,8 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             handleHelp,
             handleQue,
             handleOtp,
-            handleBye
+            handleBye,
+            handleSearch
           },
         });
       })}

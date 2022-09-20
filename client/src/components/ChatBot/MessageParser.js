@@ -1,9 +1,11 @@
 // in MessageParser.js
 import React from 'react';
+import searchData from './GoogleSearch.js'
 
 const MessageParser = ({ children, actions }) => {
-  const parse = (message) => {
+  const parse = async (message) => {
     message = message.toLowerCase()
+
     if (message.indexOf('hello') !== -1 || message.indexOf('hi') !== -1 || message.indexOf('hey') !== -1) {
       actions.handleHello();
     } 
@@ -21,6 +23,12 @@ const MessageParser = ({ children, actions }) => {
     }
     if(message.indexOf('bye') !== -1 || message.indexOf('ok') !== -1){
       actions.handleBye();
+    }
+    else{
+      const data = await searchData(message)
+      console.log(data);
+      actions.handleSearch(data.items[0].snippet);
+      actions.handleSearch(data.items[1].snippet);
     }
   };
 
