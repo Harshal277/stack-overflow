@@ -7,7 +7,9 @@ const userSchema = mongoose.Schema({
     about: { type: String, default: '' },
     tags: { type: [String] },
     joinedOn: {type: Date, default: Date.now },
-    mob: { type: String, required: false }
+    mob: { type: String, required: false },
+    lat: { type: String, default: '' },
+    long: { type: String, default: '' }
 })
 
 export default mongoose.model("User", userSchema)
